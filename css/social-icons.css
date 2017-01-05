@@ -69,6 +69,7 @@
 .rss {background: url(../img/icons/social/rss.png) no-repeat;}
 .skype {background: url(../img/icons/social/skype.png) no-repeat;}
 .spotify {background: url(../img/icons/social/spotify.png) no-repeat;}
+.stackoverflow {background: url(../img/icons/social/stackoverflow.png) no-repeat;}
 .stumbleupon {background: url(../img/icons/social/stumbleupon.png) no-repeat;}
 .tumblr {background: url(../img/icons/social/tumblr.png) no-repeat;}
 .twitter {background: url(../img/icons/social/twitter.png) no-repeat;}
@@ -354,6 +355,12 @@
 }
 .social-bookmarks li.skype a:hover {
 	background-color: #18b7f1;
+}
+.social-bookmarks li.stackoverflow a {
+	background: url(../img/icons/social2/stackoverflow.png) no-repeat 0 0;
+}
+.social-bookmarks li.stackoverflow a:hover {
+	background-color: #eb4924;
 }
 .social-bookmarks li.stumbleupon a {
 	background: url(../img/icons/social2/stumbleupon.png) no-repeat 0 0;
