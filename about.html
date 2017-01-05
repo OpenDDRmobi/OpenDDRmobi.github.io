@@ -1,154 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>OpenDDR</title> 
+	<meta name="description" content="OpenDDR Device Detection"/>
+	<meta name="keywords" content="Mobile, web, wc3, ddr, html5, css3" />
+	<meta name="author" content="Werner Keil"/>
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: Facebook Open Graph -->
+	<meta property="og:title" content=""/>
+	<meta property="og:description" content=""/>
+	<meta property="og:type" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content=""/>
+	<!-- end: Facebook Open Graph -->
 
-    <title>OpenDDR - About</title>
+    <!-- start: CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+	<!-- end: CSS -->
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">OpenDDR</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                     <!-- 
-                    <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                     -->
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>About OpenDDR</h1>
-                        <hr class="small">
-                        <span class="subheading">What is OpenDDR?</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	
+	<!--start: Wrapper -->
+	<div id="wrapper">
+		
+		<!--start: Container -->
+		<div class="container">
+		
+		
+			<!--start: Header -->
+			<header>
+			
+				<!--start: Row -->
+				<div class="row">
+					
+					<!--start: Logo -->
+					<div class="logo span4">
+						<a class="brand" href="#"><img src="img/logo.png"></a>
+					</div>
+					<!--end: Logo -->
+					
+					<!--start: Social Links -->
+					<div class="span8">
+						<div id="social-links">
+							<ul class="social-small-grid">
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-twitter">
+													<a href="http://twitter.com/OpenDDR"></a>
+												</div>
+												<div class="social-small-info-back social-small-twitter-hover">
+													<a href="http://twitter.com/OpenDDR"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-facebook">
+													<a href="http://www.facebook.com/OpenDDR-122278367886036"></a>
+												</div>
+												<div class="social-small-info-back social-small-facebook-hover">
+													<a href="http://www.facebook.com/OpenDDR-122278367886036"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<!--
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-dribbble">
+													<a href="http://dribbble.com"></a>
+												</div>
+												<div class="social-small-info-back social-small-dribbble-hover">
+													<a href="http://dribbble.com"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-flickr">
+													<a href="http://flickr.com"></a>
+												</div>
+												<div class="social-small-info-back social-small-flickr-hover">
+													<a href="http://flickr.com"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								-->
+							</ul>
+						</div>
+					</div>
+					<!--end: Social Links -->
+					
+				</div>
+				<!--end: Row -->
+						
+			</header>
+			<!--end: Header-->
+			
+			<!--start: Navigation-->	
+			<div class="navbar navbar-inverse">
+    			<div class="navbar-inner">
+        			<div class="container">
+          				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+          				</a>
+          				<div class="nav-collapse collapse">
+            				<ul class="nav">
+								<li><a href="index.html">Home</a></li>
+							    <li class="active"><a href="about.html">About</a></li>
+								<!--<li><a href="features.html">Features</a></li>-->
+								<!--<li><a href="pricing.html">Pricing</a></li>-->
+							    <li><a href="contact.html">Contact</a></li>
+              					<!--<li class="dropdown">
+                					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                					<ul class="dropdown-menu">
+                  						<li><a href="#">Action</a></li>
+                  						<li><a href="#">Another action</a></li>
+                  						<li><a href="#">Something else here</a></li>
+                  						<li class="divider"></li>
+                  						<li class="nav-header">Nav header</li>
+                  						<li><a href="#">Separated link</a></li>
+                  						<li><a href="#">One more separated link</a></li>
+                					</ul>
+              					</li>-->
+            				</ul>
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+			<!--end: Navigation-->
+			
+		</div>
+		<!--end: Container-->
+				
+		<!--start: Container -->
+    	<div class="container">
+	
+			<!--start: Row -->
+	    	<div class="row">
+		
+				<div class="span8">
+					
+					<!-- start: About Us -->
+					<div id="about">
+						<div class="title"><h3>About OpenDDR</h3></div>
                 <p>Day after day we all experience an incredible growth and fragmentation of devices available on a more and  more proliferated market. Accurately tracking their specs has become very hard work. 
 
 But this complexity can be reduced if managed by a community daily involved in improving the Device Description Repository (DDR).
 This is the essence of the OpenDDR project, the best open, free actively maintained repository of device descriptions currently available.</p>
-            </div>
-        </div>
-    </div>
+					</div>	
+					<!-- end: About Us -->
 
-    <hr>
+					<div class="horizontal-line"></div>
 
-    <!-- Footer -->
-    <footer>
-     <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://twitter.com/OpenDDR">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/OpenDDR-122278367886036">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/OpenDDRmobi">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; OpenDDR 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+					<!-- start: History -->
+					<div id="history">
+						<div class="title"><h3>History</h3></div>
+						<p>
+							<span class="dropcap">P</span>OpenDDR project has been made by a group of web & mobile developers aware of the importance for their work of an always 
+up-to-date Device Description Repository (DDR), and of good APIs to access it. 
+We think that identifying hardware and software features of the accessing clients is a basic need, a commodity that 
+should be available to any developer to allow a better software design. 
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+We started looking for all the available and open sources of device descriptions and we thought how to guarantee for the 
+future the freedom of choice to other developers, like us: the solution we found was relying on W3C standards. One of 
+the sources we looked at was the content of the file wurfl.xml, in its version dated April 24th 2011, the last one with 
+open terms of use, consistent with the initial spirit of wurfl.xml project, and respectful toward “many different people 
+from many different countries” collecting over the years the data.
+						</p>
+						<p>
+							<span class="dropcap color">P</span>As Apache DeviceMap was archived at the end of 2016 and we found references and e.g. StackOverflow questions on OpenDDR as recent as November 2016 to have always exceeded the same for DeviceMap (even while commits happened there) we decided to reactivate OpenDDR again to allow easier and faster maintenance than Apache Foundation could provide for Open Data rather than source code.
+						</p>
+						<!--  
+						<p>
+							<span class="dropcap dark">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+						</p> -->
+					</div>	
+					<!-- end: History -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+					<div class="horizontal-line"></div>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+					<!-- start: Team -->	
+					<div id="team">
+						
+						<div class="title"><h3>Team</h3></div>
+						
+						<!-- start: Row -->
+						<div class="row">
+						
+							<!-- start: About Member -->
+							<div class="span4">
+								<div class="avatar view-team">
+									<img src="img/team_member.jpg" alt="team member">
+									<div class="mask">
+										<h2>About Me</h2>
+										<p>
+											Werner Keil is Java EE Consultant, Microservice and Test Automation expert at a leading bank. After working as DevOps Build Manager for a Real-Time/Embedded/Automotive vendor, working at a large Swiss insurance company, Heidelberg Printing, in an ETCS/ Real-Time project for Thales, as Build Manager at Maersk and Agile Coach, Principal Consultant and Distinct Architect for a Financial Services company. 
+										</p>
+										<a href="#" class="info">My Personal Page</a>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="team-name">Werner Keil <span> / Co-Founder, Project Lead</span></div>
+								<div class="social_profiles">
+									<ul class="social-bookmarks">
+										<li class="facebook"><a href="http://www.facebook.com/werner.keil">facebook</a></li>
+										<li class="flickr"><a href="http://www.flickr.com/people/wernerkeil/">flickr</a></li>
+										<li class="googleplus"><a href="http://plus.google.com/u/0/+WernerKeil">googleplus</a></li>
+										<li class="linkedin"><a href="http://www.linkedin.com/in/catmedia">linkedin</a></li>
+										<li class="twitter"><a href="http://twitter.com/wernerkeil">twitter</a></li>
+										<li class="pinterest"><a href="http://www.pinterest.com/wernerkeil/">pinterest</a></li>
+									</ul>
+								</div>	
+							</div>
+							<!-- end: About Member -->
 
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+							<!-- start: About Member -->
+							<!--
+							<div class="span4">
+								<div class="avatar view-team">
+									<img src="img/team_member.jpg" alt="team member">
+									<div class="mask">
+										<h2>About Me</h2>
+										<p>
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+										</p>
+										<a href="#" class="info">My Personal Page</a>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="team-name">Lucas Luck <span> / Co-Founder, Project Manager</span></div>
+								<div class="social_profiles">
+									<ul class="social-bookmarks">
+										<li class="facebook"><a href="">facebook</a></li>
+										<li class="flickr"><a href="">flickr</a></li>
+										<li class="googleplus"><a href="#">googleplus</a></li>
+										<li class="linkedin"><a href="#">linkedin</a></li>
+										<li class="twitter"><a href="#">twitter</a></li>
+										<li class="pinterest"><a href="#">pinterest</a></li>
+									</ul>
+								</div>	
+							</div>
+							-->
+							<!-- end: About Member -->	
+						
+						</div>
+						<!-- end: Row -->
+
+					</div>
+					<!-- end: Team -->
+					
+					
+				</div>	
+				
+				<div class="span4">
+					
+					<!-- start: Sidebar -->
+					<div id="sidebar">
+
+						<!-- start: Skills -->
+						<!-- 
+				       	<div class="title"><h3>Our Skills</h3></div>
+				       	<ul class="progress-bar">
+				        	<li>
+				            	<h5>Web Design ( 40% )</h5>
+				            	<div class="meter"><span style="width: 40%"></span></div><!-- Edite width here -->
+				          	<!--</li>
+				          	<li>
+				            	<h5>Wordpress ( 80% )</h5>
+				            	<div class="meter"><span style="width: 80%"></span></div><!-- Edite width here -->
+				          	<!--</li>
+				          	<li>
+				            	<h5>Branding ( 100% )</h5>
+				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
+				          	<!--</li>
+				          	<li>
+				            	<h5>SEO Optmization ( 60% )</h5>
+				            	<div class="meter"><span style="width: 60%"></span></div><!-- Edite width here -->
+				          	<!--</li>
+				      	</ul>
+				      	<!-- end: Skills -->
+
+						<!-- start: Tabs -->
+						<!--
+						<div class="title"><h3>Tabs</h3></div>
+
+						<ul class="tabs-nav">
+							<li class="active"><a href="#tab1"><i class="mini-ico-glass"></i> Tab 1</a></li>
+							<li><a href="#tab2"><i class="mini-ico-list"></i> Tab 2</a></li>
+							<li><a href="#tab3"><i class="mini-ico-pencil"></i> Tab 3</a></li>
+						</ul>
+
+						<div class="tabs-container">
+							<div class="tab-content" id="tab1">1. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="tab-content" id="tab2">2. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="tab-content" id="tab3">3. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						</div> -->
+						<!-- end: Tabs -->
+
+						<!-- start: Testimonials-->
+						<!--
+						<div class="testimonial-container">
+
+							<div class="title"><h3>Testimonials</h3></div>
+
+								<div class="testimonials-carousel" data-autorotate="3000">
+
+									<ul class="carousel">
+
+										<li class="testimonial">
+											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+											<div class="testimonials-bg"></div>
+											<div class="testimonials-author">Lucas Luck, <span>CEO</span></div>
+										</li>
+
+										<li class="testimonial">
+											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+											<div class="testimonials-bg"></div>
+											<div class="testimonials-author">Lucas Luck, <span>CTO</span></div>
+										</li>
+
+										<li class="testimonial">
+											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+											<div class="testimonials-bg"></div>
+											<div class="testimonials-author">Lucas Luck, <span>COO</span></div>
+										</li>
+
+										<li class="testimonial">
+											<div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+											<div class="testimonials-bg"></div>
+											<div class="testimonials-author">Lucas Luck, <span>CMO</span></div>
+										</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+						-->
+						<!-- end: Testimonials-->
+
+					</div>
+					<!-- end: Sidebar -->
+					
+				</div>
+				
+			</div>
+			<!--end: Row-->
+	
+		</div>
+		<!--end: Container-->
+				
+		<!--start: Container -->
+    	<div class="container">	
+      		
+			<hr>
+		
+			<!-- start Clients List -->	
+			<div class="clients-carousel">
+		
+				<ul class="slides clients">
+					<li><img src="img/logos/1.png" alt=""/></li>
+					<!--
+					<li><img src="img/logos/2.png" alt=""/></li>	
+					<li><img src="img/logos/3.png" alt=""/></li>
+					<li><img src="img/logos/4.png" alt=""/></li>
+					<li><img src="img/logos/5.png" alt=""/></li>
+					<li><img src="img/logos/6.png" alt=""/></li>
+					<li><img src="img/logos/7.png" alt=""/></li>
+					<li><img src="img/logos/8.png" alt=""/></li>
+					<li><img src="img/logos/9.png" alt=""/></li>
+					<li><img src="img/logos/10.png" alt=""/></li>
+					-->
+				</ul>
+		
+			</div>
+			<!-- end Clients List -->
+		
+			<hr>
+
+      		<!-- start: Footer Menu -->
+			<div id="footer-menu" class="hidden-tablet hidden-phone">
+
+				<!-- start: Container -->
+				<div class="container">
+				
+					<!-- start: Row -->
+					<div class="row">
+
+						<!-- start: Footer Menu Logo -->
+						<div class="span1">
+							<div id="footer-menu-logo">
+								<a href="#"><img src="img/logo-footer-menu.png" alt="logo" /></a>
+							</div>
+						</div>
+						<!-- end: Footer Menu Logo -->
+
+						<!-- start: Footer Menu Links-->
+						<div class="span10">
+						
+							<div id="footer-menu-links">
+
+								<ul id="footer-nav">
+
+									<li><a href="index.html">Start</a></li>
+
+									<li><a href="about.html">About</a></li>
+
+									<!--<li><a href="features.html">Features</a></li>
+
+									<li><a href="pricing.html">Pricing</a></li>-->
+								
+									<li><a href="contact.html">Contact</a></li>
+
+								</ul>
+
+							</div>
+						
+						</div>
+						<!-- end: Footer Menu Links-->
+
+						<!-- start: Footer Menu Back To Top -->
+						<div class="span1">
+							
+							<div id="footer-menu-back-to-top">
+								<a href="#"></a>
+							</div>
+					
+						</div>
+						<!-- end: Footer Menu Back To Top -->
+				
+					</div>
+					<!-- end: Row -->
+				
+				</div>
+				<!-- end: Container  -->	
+
+			</div>	
+			<!-- end: Footer Menu -->
+
+			<!-- start: Footer -->
+			<div id="footer">
+			
+				<!-- start: Container -->
+				<div class="container">
+				
+					<!-- start: Row -->
+					<div class="row">
+
+						<!-- start: About -->
+						<div class="span3">
+						
+							<h3>About Us</h3>
+							<p>
+								OpenDDR is the best open, free actively maintained W3C compatible repository of device descriptions currently available.
+							</p>
+							
+						</div>
+						<!-- end: About -->
+
+						<!-- start: Photo Stream -->
+						<!--
+						<div class="span3">
+						
+							<h3>Photo Stream</h3>
+							<div class="flickr-widget">
+								<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=x&source=user&user=29609591@N08"></script>
+								<div class="clear"></div>
+							</div>
+						
+						</div>
+						-->
+						<!-- end: Photo Stream -->
+
+				
+						<div class="span6">
+					
+							<!-- start: Follow Us -->
+							<h3>Follow Us!</h3>
+							<ul class="social-grid">
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-twitter">
+													<a href="http://twitter.com/OpenDDR"></a>
+												</div>
+												<div class="social-info-back social-twitter-hover">
+													<a href="http://twitter.com/OpenDDR"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-facebook">
+													<a href="http://www.facebook.com/OpenDDR-122278367886036"></a>
+												</div>
+												<div class="social-info-back social-facebook-hover">
+													<a href="http://www.facebook.com/OpenDDR-122278367886036"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- <li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-dribbble">
+													<a href="http://dribbble.com"></a>
+												</div>
+												<div class="social-info-back social-dribbble-hover">
+													<a href="http://dribbble.com"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-flickr">
+													<a href="http://flickr.com"></a>
+												</div>
+												<div class="social-info-back social-flickr-hover">
+													<a href="http://flickr.com"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li> -->
+							</ul>
+							<!-- end: Follow Us -->
+					
+							<!-- start: Newsletter -->
+							<!--
+							<form id="newsletter">
+								<h3>Newsletter</h3>
+								<p>Please leave us your email</p>
+								<label for="newsletter_input">@:</label>
+								<input type="text" id="newsletter_input"/>
+								<input type="submit" id="newsletter_submit" value="submit">
+							</form>
+							-->
+							<!-- end: Newsletter -->
+					
+						</div>
+					
+					</div>
+					<!-- end: Row -->	
+				
+				</div>
+				<!-- end: Container  -->
+
+			</div>
+			<!-- end: Footer -->
+	
+		</div>
+		<!-- end: Container  -->
+
+	</div>
+	<!-- end: Wrapper  -->
+
+
+	<!-- start: Copyright -->
+	<div id="copyright">
+	
+		<!-- start: Container -->
+		<div class="container">
+		
+			<div class="span12">
+				<p>
+					&copy; 2016-2017, OpenDDR. <a href="http://bootstrapmaster.com" alt="Bootstrap Themes">Bootstrap Themes</a> Designed by BootstrapMaster in Poland <img src="img/poland.png" alt="Poland" style="margin-top:-4px">
+				</p>
+			</div>
+	
+		</div>
+		<!-- end: Container  -->
+		
+	</div>	
+	<!-- end: Copyright -->
+
+<!-- start: Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.8.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/carousel.js"></script>
+<script def src="js/custom.js"></script>
+<!-- end: Java Script -->
 
 </body>
-
 </html>
