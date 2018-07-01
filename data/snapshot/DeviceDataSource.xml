@@ -46590,7 +46590,7 @@
 			<property name="from" value="oddr" />
 	      </device>
 	      <device id="LG-H820" parentId="genericLG">
-			<property name="model" value="H820" />
+			<property name="model" value="LG-H820" />
 			<property name="marketing_name" value="G5" />
 			<property name="displayWidth" value="1440" />
 			<property name="displayHeight" value="2560" />
