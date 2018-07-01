@@ -46797,7 +46797,7 @@
 			<property name="from" value="oddr" />
 	      </device>
 	      <device id="NOKIA 2" parentId="genericNokia">
-			<property name="model" value="NOKIA 2" />
+			<property name="model" value="2" />
 			<property name="marketing_name" value="NOKIA 2" />
 			<property name="displayWidth" value="720" />
 			<property name="displayHeight" value="1280" />
@@ -46823,7 +46823,7 @@
 			<property name="from" value="oddr" />
 	      </device>
 	      <device id="NOKIA 2.1" parentId="NOKIA 2">
-			<property name="model" value="NOKIA 2.1" />
+			<property name="model" value="2.1" />
 			<property name="marketing_name" value="NOKIA 2.1" />
 			<property name="device_os_version" value="8.1" />
 			<property name="release-year" value="2018" />
