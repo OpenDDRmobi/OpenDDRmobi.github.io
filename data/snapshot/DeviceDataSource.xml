@@ -46827,6 +46827,7 @@
 			<property name="marketing_name" value="NOKIA 2.1" />
 			<property name="device_os_version" value="8.1" />
 			<property name="release-year" value="2018" />
+			<property name="released" value="July 2018" />
 			<property name="from" value="oddr" />
 	      </device>
 	</Devices>
