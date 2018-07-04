@@ -143,6 +143,8 @@
 			<Property aspects="device" datatype="xs:boolean"
 				defaultAspect="device" name="multiTouch" />
 			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="announced" />
+			<Property aspects="device" datatype="xs:string"
 				defaultAspect="device" name="released" />
 			<Property aspects="device" datatype="xs:integer"
 				defaultAspect="device" name="release-year" />
@@ -152,6 +154,8 @@
 				defaultAspect="device" name="depth" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
 				defaultAspect="device" name="height" />
+			<Property aspects="device" datatype="oddr:unitQuantity"
+				defaultAspect="device" name="thickness" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
 				defaultAspect="device" name="weight" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
