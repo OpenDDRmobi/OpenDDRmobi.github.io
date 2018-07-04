@@ -9707,11 +9707,18 @@ the specific language governing permissions and limitations under the License. -
                      <value>21</value>
                 </list>
             </device>
-            <device id="NOKIA 3">
+            <device id="Nokia3">
                 <list>
                     <value>Nokia 3</value>
                     <value>Nokia</value>
                     <value>3</value>
+                </list>
+            </device>
+            <device id="Nokia3.1">
+                <list>
+                    <value>Nokia 3.1</value>
+                    <value>Nokia</value>
+                    <value>31</value>
                 </list>
             </device>
         </builder>
