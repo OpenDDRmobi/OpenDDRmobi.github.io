@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright 2011-2017 OpenDDR LLC and others. Licensed under the Apache 
+<!-- Copyright 2011-2018 OpenDDR LLC and others. Licensed under the Apache 
 	License, Version 2.0 (the "License"); you may not use this file except in 
 	compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
 	Unless required by applicable law or agreed to in writing, software distributed 
@@ -8,8 +8,8 @@
 	the specific language governing permissions and limitations under the License. -->
 <ODDR>
 	<version>
-		<ver>1.32</ver>
-		<last_updated>2017-12-31 19:19:19</last_updated>
+		<ver>1.33</ver>
+		<last_updated>2018-07-04 23:33:04</last_updated>
 		<official_url>http://openddr.mobi</official_url>
 		<statement>Licensed under http://www.apache.org/licenses/LICENSE-2.0
 		</statement>
@@ -22,6 +22,12 @@
 					<xs:restriction base="xs:string">
 						<xs:enumeration value="portrait" />
 						<xs:enumeration value="landscape" />
+					</xs:restriction>
+				</xs:simpleType>
+				<xs:simpleType name="processorRegister">
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="32-Bit" />
+						<xs:enumeration value="64-Bit" />
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
@@ -125,6 +131,8 @@
 			<Property aspects="device" datatype="xs:boolean"
 				defaultAspect="device" name="dual_orientation" />
 			<Property aspects="device" datatype="xs:boolean"
+				defaultAspect="device" name="has_cellular_radio" />
+			<Property aspects="device" datatype="xs:boolean"
 				defaultAspect="device" name="image_inlining" />
 			<Property aspects="device" datatype="xs:string"
 				defaultAspect="device" name="from" />
@@ -136,20 +144,28 @@
 				defaultAspect="device" name="bluetooth" />
 			<Property aspects="device" datatype="xs:string"
 				defaultAspect="device" name="camera" />
-			<Property aspects="device" datatype="xs:string"
+			<Property aspects="device" datatype="xs:boolean"
 				defaultAspect="device" name="video" />
+			<Property aspects="device" datatype="xs:boolean"
+				defaultAspect="device" name="streaming_video" />
 			<Property aspects="device" datatype="oddr:deviceOrientation"
 				defaultAspect="device" name="default_orientation" />
 			<Property aspects="device" datatype="xs:boolean"
 				defaultAspect="device" name="multiTouch" />
 			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="announced" />
+			<Property aspects="device" datatype="xs:string"
 				defaultAspect="device" name="released" />
+			<Property aspects="device" datatype="xs:integer"
+				defaultAspect="device" name="release-year" />
 			<Property aspects="device" datatype="xs:string"
 				defaultAspect="device" name="sim" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
 				defaultAspect="device" name="depth" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
 				defaultAspect="device" name="height" />
+			<Property aspects="device" datatype="oddr:unitQuantity"
+				defaultAspect="device" name="thickness" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
 				defaultAspect="device" name="weight" />
 			<Property aspects="device" datatype="oddr:unitQuantity"
@@ -160,6 +176,28 @@
 				defaultAspect="device" name="speaker" />
 			<Property aspects="device" datatype="xs:string"
 				defaultAspect="device" name="audioJack" />
+			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="cpu" />
+			<Property aspects="device" datatype="oddr:processorRegister"
+				defaultAspect="device" name="cpuRegister" />
+			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="cpuCores" />
+			<Property aspects="device" datatype="oddr:unitQuantity"
+				defaultAspect="device" name="cpuFrequency" />
+			<Property aspects="device" datatype="oddr:unitQuantity"
+				defaultAspect="device" name="maxBandwidth" />
+			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="memoryInternal" />
+			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="memoryInternal" />
+			<Property aspects="device" datatype="xs:string"
+				defaultAspect="device" name="memoryExternal" />
+			<Property aspects="device" datatype="xs:boolean"
+				defaultAspect="device" name="nfc" />
+			<Property aspects="device" datatype="xs:boolean"
+				defaultAspect="device" name="wifi" />
+			<Property aspects="device" datatype="xs:boolean"
+				defaultAspect="device" name="vpn" />
 		</Properties>
 	</VocabularyDescription>
 </ODDR>

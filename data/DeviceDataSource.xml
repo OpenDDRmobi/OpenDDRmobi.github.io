@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-    Copyright 2011-2017 OpenDDR LLC and others.
+    Copyright 2011-2018 OpenDDR LLC and others.
  
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 -->
 <ODDR>
 	<version>
-		<ver>1.32</ver>
-		<last_updated>2017-10-20 18:52:00</last_updated>
+		<ver>1.33</ver>
+		<last_updated>2018-07-04 23:59:04</last_updated>
 		<official_url>http://openddr.mobi</official_url>
 		<statement>Licensed under http://www.apache.org/licenses/LICENSE-2.0
 		</statement>
@@ -24206,7 +24206,7 @@
 			<property name="displayHeight" value="800" />
 			<property name="mobile_browser" value="Android Webkit" />
 			<property name="device_os" value="Android" />
-			<property name="device_os_version" value="1.32-SNAPSHOT" />
+			<property name="device_os_version" value="1.33-SNAPSHOT-SNAPSHOT" />
 			<property name="inputDevices" value="touchscreen" />
 			<property name="dual_orientation" value="true" />
 			<property name="is_tablet" value="true" />
@@ -29248,6 +29248,33 @@
 			<property name="image_inlining" value="true" />
 			<property name="inputDevices" value="touchscreen" />
 			<property name="from" value="devicemap" />
+		</device>
+		<device id="PixelXL" parentId="genericGoogle">
+			<property name="model" value="Pixel XL" />
+			<property name="marketing_name" value="Pixel XL" />
+			<property name="displayWidth" value="1440" />
+			<property name="displayHeight" value="2560" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.1" />
+			<property name="dual_orientation" value="true" />
+			<property name="is_tablet" value="false" />
+			<property name="is_mobile" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="cpu" value="Qualcomm Snapdragon 821" />
+			<property name="cpuRegister" value="64-Bit" />
+			<property name="cpuCores" value="Quad-Core" />
+			<property name="cpuFrequency" value="2150 MHz" />
+			<property name="memoryInternal" value="32/128GB, 4GB RAM" />
+			<property name="from" value="openddr" />
 		</device>
 		<device id="SCH-S720C" parentId="genericSamsung">
 			<property name="model" value="SCH-S720C" />
@@ -45766,7 +45793,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="ALE-L21" parentId="genericHuawei">
+          <device id="ALE-L21" parentId="genericHuawei">
 			<property name="model" value="ALE-L21" />
 			<property name="marketing_name" value="P8 Lite" />
 			<property name="displayWidth" value="720" />
@@ -45786,7 +45813,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="PRA-LA1" parentId="genericHuawei">
+          <device id="PRA-LA1" parentId="genericHuawei">
 			<property name="model" value="PRA-LA1" />
 			<property name="marketing_name" value="P8 Lite" />
 			<property name="displayWidth" value="720" />
@@ -45806,7 +45833,30 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-A520F" parentId="genericSamsung">
+	      <device id="RNE-L21" parentId="genericHuawei">
+			<property name="model" value="RNE-L21" />
+			<property name="marketing_name" value="Mate 10 Lite" />
+			<property name="displayWidth" value="1080" />
+			<property name="displayHeight" value="2160" />
+			<property name="mobile_browser" value="Android Webkit" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.0" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="memoryInternal" value="64GB, 4GB RAM" />
+			<property name="memoryExternal" value="MicroSD, MicroSDHC, MicroSDXC, 256GB" />
+			<property name="camera" value="16MP, 5312x2988, 2MP, 1600x1200" />
+			<property name="from" value="oddr" />
+	      </device>
+          <device id="SAMSUNG SM-A520F" parentId="genericSamsung">
 			<property name="model" value="SM-A520F" />
 			<property name="marketing_name" value="Galaxy A5" />
 			<property name="displayWidth" value="1080" />
@@ -46186,7 +46236,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-G950FD" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G950FD" parentId="genericSamsung">
 			<property name="model" value="SM-G950FD" />
 			<property name="marketing_name" value="Galaxy S8 Duos" />
 			<property name="displayWidth" value="1440" />
@@ -46246,7 +46296,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="WAS-LX1A" parentId="genericHuawei">
+          <device id="WAS-LX1A" parentId="genericHuawei">
 			<property name="model" value="WAS-LX1A" />
 			<property name="marketing_name" value="P10 Lite Dual" />
 			<property name="displayWidth" value="1080" />
@@ -46266,7 +46316,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="WAS-LX1" parentId="genericHuawei">
+          <device id="WAS-LX1" parentId="genericHuawei">
 			<property name="model" value="WAS-LX1" />
 			<property name="marketing_name" value="P10 Lite Dual" />
 			<property name="displayWidth" value="1080" />
@@ -46286,7 +46336,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-AL10" parentId="genericHuawei">
+          <device id="BLN-AL10" parentId="genericHuawei">
 			<property name="model" value="BLN-AL10" />
 			<property name="marketing_name" value="Honor 6X Premium Edition Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46306,7 +46356,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-L24" parentId="genericHuawei">
+          <device id="BLN-L24" parentId="genericHuawei">
 			<property name="model" value="BLN-L24" />
 			<property name="marketing_name" value="Honor 6X Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46326,7 +46376,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-TL10" parentId="genericHuawei">
+          <device id="BLN-TL10" parentId="genericHuawei">
 			<property name="model" value="BLN-TL10" />
 			<property name="marketing_name" value="Honor 6X Standard Edition Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46346,7 +46396,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-AL40" parentId="genericHuawei">
+          <device id="BLN-AL40" parentId="genericHuawei">
 			<property name="model" value="BLN-AL40" />
 			<property name="marketing_name" value="Honor 6X Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46366,7 +46416,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-L21" parentId="genericHuawei">
+          <device id="BLN-L21" parentId="genericHuawei">
 			<property name="model" value="BLN-L21" />
 			<property name="marketing_name" value="Honor 6X Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46386,7 +46436,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-L22" parentId="genericHuawei">
+          <device id="BLN-L22" parentId="genericHuawei">
 			<property name="model" value="BLN-L22" />
 			<property name="marketing_name" value="Honor 6X Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46406,7 +46456,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="BLN-AL20" parentId="genericHuawei">
+          <device id="BLN-AL20" parentId="genericHuawei">
 			<property name="model" value="BLN-AL20" />
 			<property name="marketing_name" value="Honor 6X Premium Edition Dual SIM" />
 			<property name="displayWidth" value="1080" />
@@ -46426,7 +46476,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-             <device id="LG-K350" parentId="genericLG">
+          <device id="LG-K350" parentId="genericLG">
 			<property name="model" value="K350" />
 			<property name="marketing_name" value="K8" />
 			<property name="displayWidth" value="720" />
@@ -46446,7 +46496,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SM-N920F" parentId="genericSamsung">
+          <device id="SM-N920F" parentId="genericSamsung">
 			<property name="model" value="SM-N920F" />
 			<property name="marketing_name" value="Galaxy Note 5" />
 			<property name="displayWidth" value="1440" />
@@ -46466,7 +46516,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-G920F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G920F" parentId="genericSamsung">
 			<property name="model" value="SM-G920F" />
 			<property name="marketing_name" value="Galaxy S6" />
 			<property name="displayWidth" value="1440" />
@@ -46486,7 +46536,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-G925F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G925F" parentId="genericSamsung">
 			<property name="model" value="SM-G925F" />
 			<property name="marketing_name" value="Galaxy S6 Edge" />
 			<property name="displayWidth" value="1440" />
@@ -46506,7 +46556,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-G928F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G928F" parentId="genericSamsung">
 			<property name="model" value="SM-G928F" />
 			<property name="marketing_name" value="Galaxy S6 Edge+" />
 			<property name="displayWidth" value="1440" />
@@ -46526,7 +46576,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-J320F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-J320F" parentId="genericSamsung">
 			<property name="model" value="SM-J320F" />
 			<property name="marketing_name" value="Galaxy J3" />
 			<property name="displayWidth" value="720" />
@@ -46546,7 +46596,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-J330F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-J330F" parentId="genericSamsung">
 			<property name="model" value="SM-J330F" />
 			<property name="marketing_name" value="Galaxy J3 Duos" />
 			<property name="displayWidth" value="720" />
@@ -46566,7 +46616,31 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="LG-H870" parentId="genericLG">
+	      <device id="LG-H820" parentId="genericLG">
+			<property name="model" value="H820" />
+			<property name="marketing_name" value="G5" />
+			<property name="displayWidth" value="1440" />
+			<property name="displayHeight" value="2560" />
+			<property name="mobile_browser" value="Android Webkit" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="6.0" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="weight" value="159 g" />
+			<property name="memoryInternal" value="64GB, 4GB RAM" />
+			<property name="memoryExternal" value="MicroSD, MicroSDHC, MicroSDXC, 256GB" />
+			<property name="camera" value="Dual: 16 MP (f/1.8, 29mm, 1/2.6, laser AF, 3-axis OIS) + 8 MP (f/2.4, 12mm, 1/3.2, no AF), LED flash" />
+			<property name="from" value="oddr" />
+	      </device>
+          <device id="LG-H870" parentId="genericLG">
 			<property name="model" value="H870" />
 			<property name="marketing_name" value="G6" />
 			<property name="displayWidth" value="1440" />
@@ -46586,7 +46660,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-               <device id="SAMSUNG SM-J730F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-J730F" parentId="genericSamsung">
 			<property name="model" value="SM-J730F" />
 			<property name="marketing_name" value="Galaxy J7 (2017) Dual Sim" />
 			<property name="displayWidth" value="1080" />
@@ -46606,7 +46680,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-J330FN" parentId="genericSamsung">
+          <device id="SAMSUNG SM-J330FN" parentId="genericSamsung">
 			<property name="model" value="SM-J330FN" />
 			<property name="marketing_name" value="Galaxy J3" />
 			<property name="displayWidth" value="720" />
@@ -46626,7 +46700,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SM-A320F" parentId="genericSamsung">
+          <device id="SM-A320F" parentId="genericSamsung">
 			<property name="model" value="SM-A320F" />
 			<property name="marketing_name" value="Galaxy A3" />
 			<property name="displayWidth" value="720" />
@@ -46646,7 +46720,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-               <device id="SAMSUNG SM-A310F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-A310F" parentId="genericSamsung">
 			<property name="model" value="SM-A310F" />
 			<property name="marketing_name" value="Galaxy A3" />
 			<property name="displayWidth" value="720" />
@@ -46666,7 +46740,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-               <device id="SAMSUNG SM-J710F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-J710F" parentId="genericSamsung">
 			<property name="model" value="SM-J710F" />
 			<property name="marketing_name" value="Galaxy J7" />
 			<property name="displayWidth" value="720" />
@@ -46686,7 +46760,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-               <device id="SAMSUNG SM-G390F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G390F" parentId="genericSamsung">
 			<property name="model" value="SM-G390F" />
 			<property name="marketing_name" value="Galaxy Xcover 4" />
 			<property name="displayWidth" value="720" />
@@ -46706,7 +46780,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-               <device id="SAMSUNG SM-G389F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G389F" parentId="genericSamsung">
 			<property name="model" value="SM-G389F" />
 			<property name="marketing_name" value="Galaxy Xcover 3 VE" />
 			<property name="displayWidth" value="480" />
@@ -46724,6 +46798,178 @@
 			<property name="ajax_support_events" value="true" />
 			<property name="ajax_support_event_listener" value="true" />
 			<property name="image_inlining" value="true" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="SAMSUNG SM-T820" parentId="genericSamsung">
+			<property name="model" value="SM-T820" />
+			<property name="marketing_name" value="Galaxy Tab S3" />
+			<property name="displayWidth" value="1536" />
+			<property name="displayHeight" value="2048" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.0" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="memoryInternal" value="64GB, 4GB RAM" />
+			<property name="memoryExternal" value="MicroSD, MicroSDHC, MicroSDXC, 256GB" />
+			<property name="camera" value="12 MP rear, 5 MP front" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia2" parentId="genericNokia">
+			<property name="model" value="2" />
+			<property name="marketing_name" value="NOKIA 2" />
+			<property name="displayWidth" value="720" />
+			<property name="displayHeight" value="1280" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.1.1" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="memoryInternal" value="8 GB, 1 GB RAM" />
+			<property name="memoryExternal" value="microSD, up to 128 GB " />
+			<property name="camera" value="8 MP, AF, LED flash rear, 5 MP front" />
+			<property name="weight" value="161 g" />
+			<property name="audioJack" value="3.5mm" />
+			<property name="release-year" value="2017" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia2.1" parentId="Nokia2">
+			<property name="model" value="2.1" />
+			<property name="marketing_name" value="NOKIA 2.1" />
+			<property name="device_os_version" value="8.1" />
+			<property name="release-year" value="2018" />
+			<property name="released" value="July 2018" />
+			<property name="weight" value="174 g" />
+			<property name="thickness" value="9.67 mm" />
+			<property name="width" value="153.6 mm" />
+			<property name="height" value="77.6 mm" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia3" parentId="genericNokia">
+			<property name="model" value="3" />
+			<property name="marketing_name" value="NOKIA 3" />
+			<property name="displayWidth" value="720" />
+			<property name="displayHeight" value="1280" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.1.1" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="is_mobile" value="true" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="memoryInternal" value="16 GB, 2 GB/3 GB RAM" />
+			<property name="memoryExternal" value="microSD, up to 128 GB " />
+			<property name="camera" value="8 MP, AF, LED flash rear, 5 MP front" />
+			<property name="weight" value="161 g" />
+			<property name="audioJack" value="3.5mm" />
+			<property name="announced" value="2017, February" />
+			<property name="release-year" value="2017" />
+			<property name="released" value="2017, June" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia3.1" parentId="Nokia3">
+			<property name="model" value="3.1" />
+			<property name="marketing_name" value="NOKIA 3.1" />
+			<property name="device_os_version" value="8.0.0" />
+			<property name="weight" value="138.3 g" />
+			<property name="announced" value="2018 May" />
+			<property name="release-year" value="2018" />
+			<property name="released" value="2018, June" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia6" parentId="genericNokia">
+			<property name="model" value="6" />
+			<property name="marketing_name" value="NOKIA 6" />
+			<property name="displayWidth" value="1080" />
+			<property name="displayHeight" value="1920" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.1.1" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="is_mobile" value="true" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="cpu" value="Qualcomm Snapdragon 430" />
+			<property name="cpuFrequency" value="1.4 GHz" />
+			<property name="memoryInternal" value="16 GB, 3 GB RAM" />
+			<property name="memoryExternal" value="microSD, up to 128 GB " />
+			<property name="camera" value="8 MP, AF, LED flash rear, 5 MP front" />
+			<property name="weight" value="143 g" />
+			<property name="audioJack" value="3.5mm" />
+			<property name="release-year" value="2017" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia6.1" parentId="Nokia6">
+			<property name="model" value="6.1" />
+			<property name="marketing_name" value="NOKIA 6.1" />
+			<property name="device_os_version" value="8.1.0" />
+			<property name="cpu" value="Qualcomm Snapdragon 630" />
+			<property name="cpuFrequency" value="2.2 GHz" />
+			<property name="weight" value="172 g" />
+			<property name="memoryInternal" value="32 GB / 64 GB, 3 GB /4 GB RAM" />
+			<property name="release-year" value="2018" />
+			<property name="released" value="2018, April" />
+			<property name="from" value="oddr" />
+	      </device>
+	      <device id="Nokia8" parentId="genericNokia">
+			<property name="model" value="8" />
+			<property name="marketing_name" value="NOKIA 8" />
+			<property name="displayWidth" value="1440" />
+			<property name="displayHeight" value="2560" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="7.1.1" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="is_mobile" value="true" />
+			<property name="dual_orientation" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="cpu" value="Qualcomm Snapdragon 835" />
+			<property name="cpuCores" value="8-Core" />
+			<property name="cpuFrequency" value="2.5 GHz" />
+			<property name="cpuRegister" value="64-Bit" />
+			<property name="memoryInternal" value="64 GB, 4 GB RAM" />
+			<property name="memoryExternal" value="microSD, up to 256 GB " />
+			<property name="camera" value="13 MP, AF, LED flash rear, 5 MP front" />
+			<property name="weight" value="160 g" />
+			<property name="audioJack" value="3.5mm" />
+			<property name="release-year" value="2017" />
 			<property name="from" value="oddr" />
 	      </device>
 	</Devices>
