@@ -260,7 +260,7 @@ This is the essence of the OpenDDR project, the best open, free actively maintai
           			<div class="box">
 						<p>
 						  <pre>
-Classifier cl = new ClassifierBuilder().with(option, loaderPath).build();
+Classifier cl = Classifier.builder().with(option, loaderPath).build();
 Device device = cl.classifyDevice("A User Agent");
 						 </pre>
 						</p>
