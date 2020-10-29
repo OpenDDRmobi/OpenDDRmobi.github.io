@@ -219,6 +219,13 @@
 						  <pre>
 Classifier cl = Classifier.builder().with(option, loaderPath).build();
 Device device = cl.classifyDevice("A User Agent");
+if (device != null) {
+   System.out.println("Device ID: '" + device.getId() + "'.");
+   System.out.println("Device as JSON: ");
+   System.out.println(device.toString());
+} else {
+   System.out.println("No device found.");
+}
 						 </pre>
 						</p>
 						<div class="clear"></div>
@@ -309,12 +316,12 @@ private static void identify(String ua) {
 
    try {
       PropertyValues propertyValues = identificationService.getPropertyValues(e, propertyRefs);
-	  PropertyValue vendor = propertyValues.getValue(vendorRef);
-	  PropertyValue model = propertyValues.getValue(modelRef);
-	  PropertyValue displayWidth = propertyValues.getValue(displayWidthRef);
-	  PropertyValue displayHeight = propertyValues.getValue(displayHeightRef);
-	  PropertyValue os = propertyValues.getValue(osRef);
-	  PropertyValue osVersion = propertyValues.getValue(osVersionRef);			
+      PropertyValue vendor = propertyValues.getValue(vendorRef);
+      PropertyValue model = propertyValues.getValue(modelRef);
+      PropertyValue displayWidth = propertyValues.getValue(displayWidthRef);
+      PropertyValue displayHeight = propertyValues.getValue(displayHeightRef);
+      PropertyValue os = propertyValues.getValue(osRef);
+      PropertyValue osVersion = propertyValues.getValue(osVersionRef);			
    } catch (Exception ex) {
       throw new RuntimeException(ex);
    }
