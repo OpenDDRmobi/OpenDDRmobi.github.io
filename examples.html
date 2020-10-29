@@ -274,61 +274,51 @@ Device device = cl.classifyDevice("A User Agent");
           			<div class="box">
 						<p>
 						  <pre>
-					  private static void init() {			  
-						  private static final String CONFIG_FILE = "/oddr.properties";		
-						  				  
-						  Properties initializationProperties = new Properties();
+private static void init() {		  
+   private static final String CONFIG_FILE = "/oddr.properties";		 				 
+   Properties initializationProperties = new Properties();
+   try {
+     initializationProperties.load(SimpleConsole.class.getResourceAsStream(CONFIG_FILE));
+     identificationService = ServiceFactory.newService("mobi.openddr.simple.DDRService",
+       initializationProperties.getProperty(DDRService.ODDR_VOCABULARY_IRI), initializationProperties);
+   } catch (Exception ex) {
+     throw new RuntimeException(ex);
+   }
+ }
+ 
+private static void identify(String ua) {		
+   PropertyRef vendorRef;
+   PropertyRef modelRef;
+   PropertyRef displayWidthRef;
+   PropertyRef displayHeightRef;
+   PropertyRef osVersionRef;
+   PropertyRef osRef;
+   try {
+      vendorRef = identificationService.newPropertyRef("vendor");
+	  modelRef = identificationService.newPropertyRef("model");
+	  displayWidthRef = identificationService.newPropertyRef("displayWidth");
+	  displayHeightRef = identificationService.newPropertyRef("displayHeight");
+	  osRef = identificationService.newPropertyRef("device_os");
+	  osVersionRef = identificationService.newPropertyRef("device_os_version");
+   } catch (NameException ex) {
+      throw new RuntimeException(ex);
+   }
 
-						  try {
-			                   initializationProperties.load(SimpleConsole.class.getResourceAsStream(CONFIG_FILE));
-			                   identificationService = ServiceFactory.newService("mobi.openddr.simple.DDRService",
-					             initializationProperties.getProperty(DDRService.ODDR_VOCABULARY_IRI), initializationProperties);
-		                   } catch (Exception ex) {
-			                   throw new RuntimeException(ex);
-		                   }
-					   }
-					   
-					   	private static void identify(String ua) {
-		log.info("Identify");
-		PropertyRef vendorRef;
-		PropertyRef modelRef;
-		PropertyRef displayWidthRef;
-		PropertyRef displayHeightRef;
-		PropertyRef osVersionRef;
-		PropertyRef osRef;
-		try {
-			vendorRef = identificationService.newPropertyRef("vendor");
-			modelRef = identificationService.newPropertyRef("model");
-			displayWidthRef = identificationService.newPropertyRef("displayWidth");
-			displayHeightRef = identificationService.newPropertyRef("displayHeight");
-			osRef = identificationService.newPropertyRef("device_os");
-			osVersionRef = identificationService.newPropertyRef("device_os_version");
-		} catch (NameException ex) {
-			log.error(ex);
-			throw new RuntimeException(ex);
-		}
+   final PropertyRef[] propertyRefs = new PropertyRef[] { vendorRef, modelRef, displayWidthRef, displayHeightRef, osRef, osVersionRef };
+   final Evidence e = new ODDRHTTPEvidence();
 
-		final PropertyRef[] propertyRefs = new PropertyRef[] { vendorRef, modelRef, displayWidthRef, displayHeightRef, osRef, osVersionRef };
-		final Evidence e = new ODDRHTTPEvidence();
-
-		if (ua == null || ua.isEmpty()) {
-			ua = "Mozilla/5.0 (Linux; U; Android 2.2; en; HTC Aria A6380 Build/ERE27) AppleWebKit/540.13+ (KHTML, like Gecko) Version/3.1 Mobile Safari/524.15.0";
-		}
-		log.info("User-Agent: " + ua);
-		e.put("User-Agent", ua);
-
-		try {
-			PropertyValues propertyValues = identificationService.getPropertyValues(e, propertyRefs);
-			PropertyValue vendor = propertyValues.getValue(vendorRef);
-			PropertyValue model = propertyValues.getValue(modelRef);
-			PropertyValue displayWidth = propertyValues.getValue(displayWidthRef);
-			PropertyValue displayHeight = propertyValues.getValue(displayHeightRef);
-			PropertyValue os = propertyValues.getValue(osRef);
-			PropertyValue osVersion = propertyValues.getValue(osVersionRef);			
-		} catch (Exception ex) {
-			throw new RuntimeException(ex);
-		}
-		
+   try {
+      PropertyValues propertyValues = identificationService.getPropertyValues(e, propertyRefs);
+	  PropertyValue vendor = propertyValues.getValue(vendorRef);
+	  PropertyValue model = propertyValues.getValue(modelRef);
+	  PropertyValue displayWidth = propertyValues.getValue(displayWidthRef);
+	  PropertyValue displayHeight = propertyValues.getValue(displayHeightRef);
+	  PropertyValue os = propertyValues.getValue(osRef);
+	  PropertyValue osVersion = propertyValues.getValue(osVersionRef);			
+   } catch (Exception ex) {
+      throw new RuntimeException(ex);
+   }
+}
 						 </pre>
 						</p>
 						<div class="clear"></div>
