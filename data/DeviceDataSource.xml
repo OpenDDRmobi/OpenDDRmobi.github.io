@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-    Copyright 2011-2018 OpenDDR LLC and others.
+    Copyright 2011-2021 OpenDDR LLC and others.
  
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 -->
 <ODDR>
 	<version>
-		<ver>1.33</ver>
-		<last_updated>2018-07-04 23:59:04</last_updated>
+		<ver>1.34</ver>
+		<last_updated>2021-01-03 20:45:00</last_updated>
 		<official_url>http://openddr.mobi</official_url>
 		<statement>Licensed under http://www.apache.org/licenses/LICENSE-2.0
 		</statement>
@@ -6951,7 +6951,7 @@
 			<property name="ajax_support_event_listener" value="true" />
 			<property name="is_tablet" value="true" />
 			<property name="inputDevices" value="touchscreen" />
-			<property name="bluetooth" value="4.0" />
+			<property name="bluetooth_version" value="4.0" />
 			<property name="camera" value="Front: 0.3-megapixel, Rear: 2-megapixel" />
 			<property name="from" value="devicemap" />
 		</device>
@@ -20614,6 +20614,9 @@
 			<property name="ajax_support_events" value="true" />
 			<property name="ajax_support_event_listener" value="true" />
 			<property name="image_inlining" value="true" />
+			<property name="network">
+				<wifi>true</wifi>
+			</property>
 			<property name="from" value="oddr" />
 		</device>
 		<device id="Sprint SCP-3820" parentId="genericSanyo">
@@ -29259,7 +29262,7 @@
 			<property name="device_os_version" value="7.1" />
 			<property name="dual_orientation" value="true" />
 			<property name="is_tablet" value="false" />
-			<property name="is_mobile" value="true" />
+			<property name="is_wireless_device" value="true" />
 			<property name="ajax_support_javascript" value="true" />
 			<property name="ajax_support_getelementbyid" value="true" />
 			<property name="ajax_support_inner_html" value="true" />
@@ -29274,6 +29277,15 @@
 			<property name="cpuCores" value="Quad-Core" />
 			<property name="cpuFrequency" value="2150 MHz" />
 			<property name="memoryInternal" value="32/128GB, 4GB RAM" />
+			<property name="sim_size" value="Nano-SIM"/>
+			<property name="pixel_density_ppi" value="534" />
+			<property name="display">
+				<type>AMOLED</type>
+				<diagonal>139.7 mm</diagonal>
+				<aspect_ratio>16:9</aspect_ratio>
+				<material>Gorilla-Glass 4</material>
+				<pixel_density>534 ppi</pixel_density>
+			</property>						
 			<property name="from" value="openddr" />
 		</device>
 		<device id="SCH-S720C" parentId="genericSamsung">
@@ -39677,7 +39689,7 @@
 			<property name="displayWidth" value="600" />
 			<property name="displayHeight" value="1024" />
 			<property name="pixel_density_ppi" value="170" />
-			<property name="release-year" value="2013" />
+			<property name="release_year" value="2013" />
 		</device>
 		<device id="SM-T312" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T312" />
@@ -39685,7 +39697,7 @@
 			<property name="displayWidth" value="800" />
 			<property name="displayHeight" value="1280" />
 			<property name="pixel_density_ppi" value="189" />
-			<property name="release-year" value="2013" />
+			<property name="release_year" value="2013" />
 		</device>
 		<device id="SM-T230" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T230" />
@@ -39693,7 +39705,7 @@
 			<property name="displayWidth" value="800" />
 			<property name="displayHeight" value="1280" />
 			<property name="pixel_density_ppi" value="216" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T330" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T330" />
@@ -39701,7 +39713,7 @@
 			<property name="displayWidth" value="800" />
 			<property name="displayHeight" value="1280" />
 			<property name="pixel_density_ppi" value="189" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T530" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T530" />
@@ -39709,7 +39721,7 @@
 			<property name="displayWidth" value="800" />
 			<property name="displayHeight" value="1280" />
 			<property name="pixel_density_ppi" value="149" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T320" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T320" />
@@ -39717,7 +39729,7 @@
 			<property name="displayWidth" value="1600" />
 			<property name="displayHeight" value="2560" />
 			<property name="pixel_density_ppi" value="359" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T365" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T365" />
@@ -39725,7 +39737,7 @@
 			<property name="displayWidth" value="800" />
 			<property name="displayHeight" value="1200" />
 			<property name="pixel_density_ppi" value="189" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T700" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T700" />
@@ -39733,7 +39745,7 @@
 			<property name="displayWidth" value="1600" />
 			<property name="displayHeight" value="2560" />
 			<property name="pixel_density_ppi" value="359" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T800" parentId="genericGalaxyTab">
 			<property name="model" value="SM-T800" />
@@ -39741,7 +39753,7 @@
 			<property name="displayWidth" value="1600" />
 			<property name="displayHeight" value="2560" />
 			<property name="pixel_density_ppi" value="288" />
-			<property name="release-year" value="2014" />
+			<property name="release_year" value="2014" />
 		</device>
 		<device id="SM-T217S" parentId="genericSamsung">
 			<property name="model" value="SM-T217S" />
@@ -43105,7 +43117,7 @@
 			<property name="inputDevices" value="touchscreen" />
 			<property name="multiTouch" value="true" />
 			<property name="weight" value="120 g"/>
-			<property name="sim" value="Mini-SIM"/>
+			<property name="sim_size" value="Mini-SIM"/>
 			<property name="from" value="devicemap" />
 		</device>
 		<device id="SM-P605V" parentId="genericSamsung">
@@ -45440,6 +45452,9 @@
 			<property name="weight" value="490 g" />
 			<property name="speaker" value="true" />
 			<property name="audioJack" value="3.5mm" />
+			<property name="types">
+				<tablet>true</tablet>
+			</property>
 			<property name="from" value="oddr" />
 		</device>
 		<device id="D5316" parentId="genericSonyEricsson">
@@ -45533,7 +45548,7 @@
 			<property name="camera" value="Front: 1.2-megapixel, Rear: 5-megapixel" />
 			<property name="from" value="devicemap" />
 		</device>
-                <device id="SAMSUNG SM-G930F" parentId="genericSamsung">
+        <device id="SAMSUNG SM-G930F" parentId="genericSamsung">
 			<property name="model" value="SM-G930F" />
 			<property name="marketing_name" value="Galaxy S7" />
 			<property name="displayWidth" value="1440" />
@@ -45553,7 +45568,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SM-G930FD" parentId="genericSamsung">
+          <device id="SM-G930FD" parentId="genericSamsung">
 			<property name="model" value="SM-G930FD" />
 			<property name="marketing_name" value="Galaxy S7 Duos" />
 			<property name="displayWidth" value="1440" />
@@ -45573,7 +45588,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SM-G935FD" parentId="genericSamsung">
+          <device id="SM-G935FD" parentId="genericSamsung">
 			<property name="model" value="SM-G935FD" />
 			<property name="marketing_name" value="Galaxy S7 Edge Duos" />
 			<property name="displayWidth" value="1440" />
@@ -45593,7 +45608,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SAMSUNG SM-G935F" parentId="genericSamsung">
+          <device id="SAMSUNG SM-G935F" parentId="genericSamsung">
 			<property name="model" value="SAMSUNG SM-G935F" />
 			<property name="marketing_name" value="Galaxy S7 Edge" />
 			<property name="displayWidth" value="1440" />
@@ -45613,7 +45628,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="HUAWEI VNS-L31" parentId="genericHuawei">
+          <device id="HUAWEI VNS-L31" parentId="genericHuawei">
 			<property name="model" value="VNS-L31" />
 			<property name="marketing_name" value="P9 lite" />
 			<property name="displayWidth" value="1080" />
@@ -45633,7 +45648,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="HUAWEI VNS-L23" parentId="genericHuawei">
+          <device id="HUAWEI VNS-L23" parentId="genericHuawei">
 			<property name="model" value="VNS-L31" />
 			<property name="marketing_name" value="P9 lite" />
 			<property name="displayWidth" value="1080" />
@@ -45653,7 +45668,7 @@
 			<property name="image_inlining" value="true" />
 			<property name="from" value="oddr" />
 	      </device>
-              <device id="SM-J530F" parentId="genericSamsung">
+          <device id="SM-J530F" parentId="genericSamsung">
 			<property name="model" value="SM-J530F" />
 			<property name="marketing_name" value="Galaxy J5" />
 			<property name="displayWidth" value="720" />
@@ -46846,14 +46861,14 @@
 			<property name="camera" value="8 MP, AF, LED flash rear, 5 MP front" />
 			<property name="weight" value="161 g" />
 			<property name="audioJack" value="3.5mm" />
-			<property name="release-year" value="2017" />
+			<property name="release_year" value="2017" />
 			<property name="from" value="oddr" />
 	      </device>
 	      <device id="Nokia2.1" parentId="Nokia2">
 			<property name="model" value="2.1" />
 			<property name="marketing_name" value="NOKIA 2.1" />
 			<property name="device_os_version" value="8.1" />
-			<property name="release-year" value="2018" />
+			<property name="release_year" value="2018" />
 			<property name="released" value="July 2018" />
 			<property name="weight" value="174 g" />
 			<property name="thickness" value="9.67 mm" />
@@ -46870,7 +46885,7 @@
 			<property name="device_os" value="Android" />
 			<property name="device_os_version" value="7.1.1" />
 			<property name="inputDevices" value="touchscreen" />
-			<property name="is_mobile" value="true" />
+			<property name="is_wireless_device" value="true" />
 			<property name="dual_orientation" value="true" />
 			<property name="ajax_support_javascript" value="true" />
 			<property name="ajax_support_getelementbyid" value="true" />
@@ -46886,7 +46901,7 @@
 			<property name="weight" value="161 g" />
 			<property name="audioJack" value="3.5mm" />
 			<property name="announced" value="2017, February" />
-			<property name="release-year" value="2017" />
+			<property name="release_year" value="2017" />
 			<property name="released" value="2017, June" />
 			<property name="from" value="oddr" />
 	      </device>
@@ -46896,7 +46911,7 @@
 			<property name="device_os_version" value="8.0.0" />
 			<property name="weight" value="138.3 g" />
 			<property name="announced" value="2018 May" />
-			<property name="release-year" value="2018" />
+			<property name="release_year" value="2018" />
 			<property name="released" value="2018, June" />
 			<property name="from" value="oddr" />
 	      </device>
@@ -46909,7 +46924,7 @@
 			<property name="device_os" value="Android" />
 			<property name="device_os_version" value="7.1.1" />
 			<property name="inputDevices" value="touchscreen" />
-			<property name="is_mobile" value="true" />
+			<property name="is_wireless_device" value="true" />
 			<property name="dual_orientation" value="true" />
 			<property name="ajax_support_javascript" value="true" />
 			<property name="ajax_support_getelementbyid" value="true" />
@@ -46926,7 +46941,7 @@
 			<property name="camera" value="8 MP, AF, LED flash rear, 5 MP front" />
 			<property name="weight" value="143 g" />
 			<property name="audioJack" value="3.5mm" />
-			<property name="release-year" value="2017" />
+			<property name="release_year" value="2017" />
 			<property name="from" value="oddr" />
 	      </device>
 	      <device id="Nokia6.1" parentId="Nokia6">
@@ -46937,7 +46952,7 @@
 			<property name="cpuFrequency" value="2.2 GHz" />
 			<property name="weight" value="172 g" />
 			<property name="memoryInternal" value="32 GB / 64 GB, 3 GB /4 GB RAM" />
-			<property name="release-year" value="2018" />
+			<property name="release_year" value="2018" />
 			<property name="released" value="2018, April" />
 			<property name="from" value="oddr" />
 	      </device>
@@ -46950,7 +46965,7 @@
 			<property name="device_os" value="Android" />
 			<property name="device_os_version" value="7.1.1" />
 			<property name="inputDevices" value="touchscreen" />
-			<property name="is_mobile" value="true" />
+			<property name="is_wireless_device" value="true" />
 			<property name="dual_orientation" value="true" />
 			<property name="ajax_support_javascript" value="true" />
 			<property name="ajax_support_getelementbyid" value="true" />
@@ -46969,8 +46984,160 @@
 			<property name="camera" value="13 MP, AF, LED flash rear, 5 MP front" />
 			<property name="weight" value="160 g" />
 			<property name="audioJack" value="3.5mm" />
-			<property name="release-year" value="2017" />
+			<property name="release_year" value="2017" />
 			<property name="from" value="oddr" />
 	      </device>
+	     <device id="SM-T807V" parentId="genericSamsung">
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="marketing_name" value="Galaxy Tab 10.5" />
+			<property name="dual_orientation" value="true" />
+			<property name="device_os_version" value="4.4" />
+			<property name="ajax_support_events" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="displayHeight" value="1280" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="model" value="SM-T807V" />
+			<property name="displayWidth" value="800" />
+			<property name="device_os" value="Android" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="mobile_browser" value="Android Webkit" />
+			<property name="mobile_browser_version" value="4.0" />
+			<property name="is_tablet" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="from" value="open_db_modified" />
+			<property name="types">
+				<tablet>true</tablet>
+			</property>
+		</device>
+		<device id="SM-N960" parentId="genericSamsung">
+			<property name="model" value="SM-N960" />
+			<property name="marketing_name" value="Galaxy Note 9" />
+			<property name="displayWidth" value="1440" />
+			<property name="displayHeight" value="2960" />
+			<property name="mobile_browser" value="Android Webkit" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="8.1" />
+			<property name="dual_orientation" value="true" />
+			<property name="is_tablet" value="true" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="image_inlining" value="true" />
+			<property name="release_year" value="2018" />
+			<property name="weight" value="201 g" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="from" value="oddr" />
+		</device>
+		<device id="SM-N960F" parentId="SM-N960" />
+		<device id="SM-N960N" parentId="SM-N960" />
+		<device id="SM-N960U" parentId="SM-N960" />
+		<device id="LG-LM-V600" parentId="genericLG">
+			<property name="model" value="LM-V600" />
+			<property name="marketing_name" value="V60 ThinQ 5G" />
+			<property name="displayWidth" value="1080" />
+			<property name="displayHeight" value="2460" />
+			<property name="weight" value="218 g" />
+			<property name="browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="10" />
+			<property name="dual_orientation" value="true" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_touch_events" value="true" />			
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="ajax_gesture_vents" value="none" />
+			<property name="ajax_preferred_geoloc_api" value="w3c_api" />
+			<property name="bluetooth_version" value="5.1" />
+			<property name="image_inlining" value="true" />
+			<property name="types">
+				<phone>true</phone>
+				<foldable>true</foldable>
+			</property>
+			<property name="display">
+				<multiScreen>true</multiScreen>
+				<screens>2</screens>
+			</property>
+			<property name="from" value="oddr" />
+		</device>
+		<device id="LG-LM-K410" parentId="genericLG">
+			<property name="model" value="LM-K410" />
+			<property name="marketing_name" value="K41S" />
+			<property name="displayWidth" value="720" />
+			<property name="displayHeight" value="1600" />
+			<property name="weight" value="191.7 g" />
+			<property name="mobile_browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="9" />
+			<property name="dual_orientation" value="true" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_touch_events" value="true" />			
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="ajax_gesture_vents" value="none" />
+			<property name="ajax_preferred_geoloc_api" value="w3c_api" />
+			<property name="dual_sim" value="true" />
+			<property name="sim_size" value="Nano-SIM"/>
+			<property name="image_inlining" value="true" />
+			<property name="release_year" value="2020" />
+			<property name="product_code" value="LM-K410EMW" />
+			<property name="types">
+				<phone>true</phone>
+			</property>
+			<property name="network">
+				<dnla>true</dnla>
+				<nfc>true</nfc>
+				<gps>true</gps>
+				<hotspot>true</hotspot>
+			</property>
+			<property name="from" value="oddr" />
+		</device>
+		<device id="LG-LM-X430" parentId="genericLG">
+			<property name="model" value="LM-X430" />
+			<property name="marketing_name" value="K40s" />
+			<property name="displayWidth" value="720" />
+			<property name="displayHeight" value="1560" />
+			<property name="weight" value="173 g" />
+			<property name="browser" value="Chrome" />
+			<property name="device_os" value="Android" />
+			<property name="device_os_version" value="9" />
+			<property name="dual_orientation" value="true" />
+			<property name="inputDevices" value="touchscreen" />
+			<property name="ajax_support_javascript" value="true" />
+			<property name="ajax_support_getelementbyid" value="true" />
+			<property name="ajax_support_inner_html" value="true" />
+			<property name="ajax_manipulate_dom" value="true" />
+			<property name="ajax_manipulate_css" value="true" />
+			<property name="ajax_support_events" value="true" />
+			<property name="ajax_touch_events" value="true" />			
+			<property name="ajax_support_event_listener" value="true" />
+			<property name="ajax_gesture_vents" value="none" />
+			<property name="ajax_preferred_geoloc_api" value="w3c_api" />
+			<property name="bluetooth_version" value="5.0" />
+			<property name="image_inlining" value="true" />
+			<property name="product_code" value="LMX430EMW.ADECBK, LMX430EMW.ADECBL" />
+			<property name="ean" value="8806087040524, 8806087040531" />
+			<property name="types">
+				<phone>true</phone>
+			</property>
+			<property name="from" value="oddr" />
+		</device>
 	</Devices>
 </ODDR>
